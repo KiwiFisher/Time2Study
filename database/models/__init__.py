@@ -1,63 +1,62 @@
-from database import db, conn, Base
+from database import db, conn, Session, Base
+from sqlalchemy import Column, Integer, String, Float, Time, Date, inspect
 
-class Paper(db.Model):
+
+# This class models a paper for SQLAlchemy
+class Paper(Base):
     __tablename__ = 'paper'
-    paper_id = db.Column('paper_id', db.VARCHAR, primary_key=True)
-    paper_name = db.Column('paper_name', db.VARCHAR)
-    paper_desc = db.Column('paper_desc', db.VARCHAR)
-    efts = db.Column('efts', db.DECIMAL)
-    points = db.Column('points', db.DECIMAL)
-    level = db.Column('level', db.INTEGER)
+    paper_id = Column('paper_id', String, primary_key=True)
+    paper_name = Column('paper_name', String)
+    paper_desc = Column('paper_desc', String)
+    efts = Column('efts', Float)
+    points = Column('points', Float)
+    level = Column('level', Integer)
 
     def get_info(paper_id):
-        results = conn.execute("SELECT * FROM paper WHERE paper_id='{}'".format(paper_id))
+        """
+        Gets all available information on a given paper
+        :return: A dictionary containing all paper information
+        """
+        session = Session()
 
-        if results:
-            info = {}
+        info = {}
 
-            # Add all of the paper info to the results dictionary
-            for result in results:
-                info['paper_id'] = result['paper_id']
-                info['paper_name'] = result['paper_name']
-                info['paper_desc'] = result['paper_desc']
-                info['efts'] = result['efts']
-                info['points'] = result['points']
-                info['level'] = result['level']
+        for paper in session.query(Paper).filter_by(paper_id=paper_id):
 
-                lectures = conn.execute("SELECT * FROM lecture WHERE paper_id='{}'".format(paper_id))
-                info['streams'] = {}
+            info['paper_id'] = paper.paper_id
+            info['paper_name'] = paper.paper_name
+            info['paper_desc'] = paper.paper_desc
+            info['efts'] = paper.efts
+            info['points'] = paper.points
+            info['level'] = paper.level
 
-                for lecture in lectures:
-                    if lecture['stream_id'] not in info['streams']:
-                        info['streams'][lecture['stream_id']] = []
+            info['streams'] = {}
 
+            for lecture in session.query(Lecture).filter_by(paper_id=paper_id):
+                if lecture.stream_id not in info['streams']:
+                    info['streams'][lecture.stream_id] = []
 
-                    lec_info = {}
-                    lec_info['room'] = lecture['room']
-                    lec_info['day'] = str(lecture['day'])
-                    lec_info['start_time'] = str(lecture['start_time'])
-                    lec_info['end_time'] = str(lecture['end_time'])
-                    lec_info['start_date'] = str(lecture['start_date'])
+                lec_info = {'room': lecture.room, 'day': str(lecture.day),
+                            'start_time': str(lecture.start_time), 'end_time': str(lecture.end_time),
+                            'start_date': str(lecture.start_date)}
 
-                    info['streams'][lecture['stream_id']].append(lec_info)
+                info['streams'][lecture.stream_id].append(lec_info)
 
-            return info
-
-        else:
-            return {}
+        return info
 
 
-class Lecture:
+class Lecture(Base):
     __tablename__ = 'lecture'
-    paper_id = db.Column('paper_id', db.VARCHAR)
-    stream_id = db.Column('stream_id', db.VARCHAR)
-    room = db.Column('room', db.VARCHAR)
-    start_time = db.Column('start_time', db.TIME)
-    end_time = db.Column('end_time', db.TIME)
-    start_date = db.Column('start_date', db.DATE)
-    day = db.Column('day', db.VARCHAR)
+    paper_id = Column('paper_id', String, primary_key=True)
+    stream_id = Column('stream_id', String, primary_key=True)
+    room = Column('room', String, primary_key=True)
+    start_time = Column('start_time', Time, primary_key=True)
+    end_time = Column('end_time', Time)
+    start_date = Column('start_date', Date, primary_key=True)
+    day = Column('day', String, primary_key=True)
 
-class Stream(db.Model):
+
+class Stream(Base):
     __tablename__ = 'stream'
-    paper_id = db.Column('paper_id', db.VARCHAR, primary_key=True)
-    stream_id = db.Column('stream_id', db.VARCHAR, primary_key=True)
+    paper_id = db.Column('paper_id', Integer, primary_key=True)
+    stream_id = db.Column('stream_id', Integer, primary_key=True)
