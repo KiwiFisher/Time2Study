@@ -1,7 +1,8 @@
 from flask import Flask
 from flask import render_template
 from flask_jsonpify import jsonpify
-from database import db
+from database import db,conn
+from database.models import Paper
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://admin:sdp@localhost/paper_schema'
@@ -15,7 +16,7 @@ def index():
 
 @app.route('/api/info/<paper_id>')
 def paper_info(paper_id):
-    return jsonpify(db.Paper.get_info(paper_id))
+    return jsonpify(Paper.get_info(paper_id))
 
 
 @app.route("/api/algorithm/<path:papers_string>")
