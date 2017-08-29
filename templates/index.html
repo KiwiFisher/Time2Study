@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/static/calendar.css">
+    <link rel="stylesheet" href="/static/main-theme.css">
+</head>
+
+<!-- Nav bar stuff below -->
+<nav class="navbar main-theme">
+    <div class="container-fluid" id="navbar-bg">
+        <div class="navbar-header">
+            <a class="navbar-brand">
+                <img alt="logo" id="navbar-logo" src="/static/logo.png">
+            </a>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="navbar-stripe"></div>
+
+</nav>
+
+<body>
+
+    <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout -->
+
+    <div class="calendar">
+
+        <div class="day-heading"></div>
+        <div class="day-heading">Monday</div>
+        <div class="day-heading">Tuesday</div>
+        <div class="day-heading">Wednesday</div>
+        <div class="day-heading">Thursday</div>
+        <div class="day-heading">Friday</div>
+
+        <div class="column time-keys">
+            <div class="time-key">8am</div>
+            <div class="time-key">9am</div>
+            <div class="time-key">10am</div>
+            <div class="time-key">11am</div>
+            <div class="time-key">12am</div>
+            <div class="time-key">1pm</div>
+            <div class="time-key">2pm</div>
+            <div class="time-key">3pm</div>
+            <div class="time-key">4pm</div>
+            <div class="time-key">5pm</div>
+            <div class="time-key">6pm</div>
+            <div class="time-key">7pm</div>
+            <div class="time-key">8pm</div>
+        </div>
+
+        <div id="monday">
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+        </div>
+
+        <div id="tuesday">
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+        </div>
+        <div id="wednesday">
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+        </div>
+        <div id="thursday">
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+            <div class="time-slot"></div>
+        </div>
+
+        <div id="friday">
+            <div id="fr-8-9" class="time-slot"></div>
+            <div id="fr-9-10" class="time-slot"></div>
+            <div id="fr-10-11" class="time-slot"></div>
+            <div id="fr-11-12" class="time-slot"></div>
+            <div id="fr-12-1" class="time-slot"></div>
+            <div id="fr-1-2" class="time-slot"></div>
+            <div id="fr-2-3" class="time-slot"></div>
+            <div id="fr-3-4" class="time-slot"></div>
+            <div id="fr-4-5" class="time-slot"></div>
+            <div id="fr-5-6" class="time-slot"></div>
+            <div id="fr-6-7" class="time-slot"></div>
+            <div id="fr-7-8" class="time-slot"></div>
+        </div>
+
+
+    </div>
+
+</body>
+
+
+<footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+</footer>
+
+</html>
