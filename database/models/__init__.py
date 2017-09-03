@@ -1,4 +1,4 @@
-from database import db, conn, Session, Base
+from database import db, Session, Base
 from sqlalchemy import Column, Integer, String, Float, Time, Date, inspect
 
 
@@ -42,7 +42,9 @@ class Paper(Base):
 
                 info['streams'][lecture.stream_id].append(lec_info)
 
+        session.close()
         return info
+
 
 
 class Lecture(Base):
