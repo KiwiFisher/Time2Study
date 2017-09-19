@@ -1,0 +1,83 @@
+.calendar {
+    max-width: 950px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 3fr);
+    grid-auto-rows: minmax(30px, auto);
+
+    border: solid black 1px;
+    padding: 1em;
+}
+
+.column {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.time-key {
+    height: 40px;
+    text-align: center;
+    align-content: center;
+}
+
+.time-slot {
+    border-top: solid darkgray;
+    height: 40px;
+    margin: 0px;
+}
+
+.time-slot-quarter {
+    line-height: 10px;
+    height: 11px;
+    margin: 0px;
+}
+
+
+.time-keys {
+    position: relative;
+    bottom: 13px;
+}
+
+.day-heading {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.navbar-gap {
+    height: 80px;
+    background-color: dimgrey;
+}
+
+/** First paper**/
+.time-slot-enrolled-1{
+    border-top: solid darkgray;
+    height: 40px;
+    margin: 0px;
+    background-color: red;
+
+}
+
+/** Second paper**/
+.time-slot-enrolled-2{
+    border-top: solid darkgray;
+    height: 40px;
+    margin: 0px;
+    background-color: green;
+}
+
+/** Third paper**/
+.time-slot-enrolled-3{
+    border-top: solid darkgray;
+    height: 40px;
+    margin: 0px;
+    background-color: blue;
+}
+
+/** Fourth paper**/
+.time-slot-enrolled-4{
+    border-top: solid darkgray;
+    height: 40px;
+    margin: 0px;
+    background-color: darkorange;
+}
