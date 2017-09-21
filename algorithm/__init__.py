@@ -1,4 +1,4 @@
-from algorithm.objectify import Paper, Stream, Lecture
+from structs import Paper, Stream, Lecture
 
 # The algorithm is being designed with modularity in mind. This will allow us to directly interchange algorithms
 # should a large scale rebuild ever be required. It also means multiple people could work towards the same goal

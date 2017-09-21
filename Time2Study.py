@@ -10,7 +10,7 @@ Welcome to Time2Study. This Flask app will take the pain out of enrolling at AUT
 
 html files can be found in templates
 css and javascript files can be found in static along with other static assets
-sqlalchemy bits nd ORM models can be found in database and database/models
+sqlalchemy bits nd ORM models can be found in databasegfd and databasegfd/models
 """
 
 app = Flask(__name__)
@@ -38,4 +38,5 @@ def api(papers_string):
     return jsonpify(Algorithm(papers_list).match_streams())
 
 if __name__ == '__main__':
+    print("Welcome to time2study")
     app.run()
