@@ -1,7 +1,6 @@
 from database import db, Session, Base
 from sqlalchemy import Column, Integer, String, Float, Time, Date, inspect
 
-
 # This class models a paper for SQLAlchemy
 class Paper(Base):
     __tablename__ = 'paper'

@@ -7,6 +7,8 @@ from algorithm.objectify import Paper, Stream, Lecture
 
 # Here the same json data posted by flask is passed as a list of dictionaries. The presets
 # will have have a @TODO defined naming schedule and will be the key in a dictionary with their corresponding value
+from database.paperscraper import paper
+
 
 class Algorithm:
     def __init__(self, papers, presets=None):
@@ -38,7 +40,7 @@ class Algorithm:
     def match_streams(self):
         to_return = {}
 
-        for paper_id in self.papers:
+        """for paper_id in self.papers:
             paper = self.papers[paper_id]
             print(paper)
             to_return[paper.paper_id] = paper.paper_name
@@ -48,7 +50,13 @@ class Algorithm:
                 print("    - " + str(stream))
 
                 for lecture in stream.lectures:
-                    print("        - " + str(lecture))
+                    print("        - " + str(lecture))"""
+
+        #This loop adds dictonary self.papers key-values pairs to to_return variable
+        #assuming self.papers is already a dictionary with papers being its key and stream being its values
+        #if not then we may have to convert the self.papers into a dict.
+        for x in self.papers:
+            to_return(self.papers)
 
         return to_return
 
@@ -58,3 +66,11 @@ class Algorithm:
     #     # Your code here
     #
     #     return to_return
+
+
+    #pAPER AS THE KEY STREAM AS THE VALUE to return a dict
+    #[
+    #[{'COMP603' : '51A'}, {'COMP603' : '51A'}, {'COMP603' : '51A'}, {'COMP603' : '51A'}],
+    #[{'COMP603': '51A'}, {'COMP603': '51A'}, {'COMP603': '51A'}, {'COMP603': '51A'}],
+    #[{'COMP603': '51A'}, {'COMP603': '51A'}, {'COMP603': '51A'}, {'COMP603': '51A'}]
+    #]
