@@ -109,7 +109,9 @@ class SurrogatePK(object):
                 (isinstance(record_id, (str, bytes)) and record_id.isdigit(),
                  isinstance(record_id, (int, float))),
         ):
+            print("FOUND SOMETHING")
             return cls.query.filter_by(id=int(record_id)).first()
+        print("FOUND NOTHING")
         return None
 
 

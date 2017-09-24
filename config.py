@@ -41,13 +41,13 @@ class Config(object):
 class DevConfig(Config):
     ENV = None
 
-    PROJECT = "spoolwizard"
+    PROJECT = "time2study"
 
     PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
-    ADMINS = ['brandon@devsteady.com']
+    ADMINS = ['julian.abraham97@gmail.com']
 
-    INSTANCE_FOLDER_PATH = os.path.join(os.path.expanduser("~"), '/Projects/Python/spoolwizard/')
+    INSTANCE_FOLDER_PATH = os.path.join(os.path.expanduser("~"), '/Projects/Python/time2study/')
 
     LOG_FOLDER = os.path.join(INSTANCE_FOLDER_PATH, 'logs')
     LOGGING = False

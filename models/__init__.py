@@ -4,7 +4,7 @@ from extensions import db
 
 
 class Paper(SqlModel, SurrogatePK):
-    __tablename__ = 'line'
+    __tablename__ = 'paper'
 
     paper_id = db.Column(db.Integer, primary_key=True)
     paper_name = db.Column(db.Unicode)
