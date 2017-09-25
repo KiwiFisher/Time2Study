@@ -349,6 +349,45 @@ for (index = 0, len = stream.classes.length; index < len; ++index) {
 
 }
 
+$.each( papers, function( key, value ) {
+    // console.log( key + ": " + value );
+
+    $.each(value.streams, function ( subKey, subValue) {
+        // body...
+        // console.log( subKey + ": " + subValue );
+
+        $.each(subValue.classes, function ( classNum, classValue) {
+            // body...
+            console.log( ": " , classValue);
+
+            var id = classValue.day.toLowerCase().substring(0,2);
+
+            classValue.start_time = '' + classValue.start_time;
+            classValue.end_time = '' + classValue.end_time;
+
+
+            var startId = classValue.start_time.slice(0, -2);
+
+            var duration = classValue.end_time.slice(0, -2) - classValue.start_time.slice(0, -2);
+
+            console.log( "startId ==> " , startId);
+            console.log( "duration ==> " , duration);
+
+            for (var i = 0; i  < duration; i++){
+
+                var selector = id + '-' +  (parseInt(startId) + i);
+
+                console.log( "selector ==> " , selector);
+
+
+                // thsi is the js code to update each course
+                $('#'+selector).html(value.paper_code + ' ' + value.paper_name);
+
+            }
+
+        })
+    })
+});
 
 
 
