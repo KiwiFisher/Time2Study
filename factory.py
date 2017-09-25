@@ -4,7 +4,8 @@ from werkzeug.exceptions import default_exceptions, HTTPException
 from config import Config
 
 """
-This file has all of the methods needed to generate a fully configured flask app"""
+This file has all of the methods needed to generate a fully configured flask app
+"""
 
 
 def make_json_error(ex):

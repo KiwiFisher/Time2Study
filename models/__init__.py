@@ -1,9 +1,9 @@
 import utils
-from database import SqlModel, Column, SurrogatePK
+#from database import SqlModel, Column, SurrogatePK
 from extensions import db
 
 
-class Paper(SqlModel, SurrogatePK):
+class Paper(db.Model):
     __tablename__ = 'paper'
 
     paper_id = db.Column(db.Integer, primary_key=True)
@@ -13,38 +13,39 @@ class Paper(SqlModel, SurrogatePK):
     points = db.Column(db.Integer)
     level = db.Column(db.Float)
 
-    def __init__(self, paper_id, paper_name, paper_desc, efts, points, level, **kwargs):
-        SqlModel.__init__(
-            self,
-            paper_id=paper_id,
-            paper_name=paper_name,
-            paper_desc = paper_desc,
-            efts=efts,
-            points=points,
-            level=level,
-            **kwargs
-        )
 
     def to_dict(self):
-        return dict(
+
+        info = dict(
             paper_id=self.paper_id,
             paper_name=self.paper_name,
             paper_desc=self.paper_desc,
+            streams={},
             efts=self.efts,
             points=self.points,
             level=self.level,
         )
 
+        for lecture in Lecture.query.filter_by(paper_id=self.paper_id):
+            print(lecture.to_dict())
+            if lecture.stream_id not in info['streams']:
+                info['streams'][lecture.stream_id] = []
 
-class Stream(SqlModel, SurrogatePK):
+            lec_info = {'room': lecture.room, 'day': str(lecture.day),
+                        'start_time': str(lecture.start_time), 'end_time': str(lecture.end_time),
+                        'start_date': str(lecture.start_date)}
+
+            info['streams'][lecture.stream_id].append(lec_info)
+
+        return info
+
+
+class Stream(db.Model):
     __tablename__ = 'stream'
 
-    paper_id = Column(db.Unicode, primary_key=True)
-    stream_id = Column(db.Unicode, primary_key=True)
+    paper_id = db.Column(db.Unicode, primary_key=True)
+    stream_id = db.Column(db.Unicode, primary_key=True)
 
-    def __init__(self, paper_id, stream_id, **kwargs):
-        SqlModel.__init__(self,
-                          paper_id=paper_id, stream_id=stream_id, **kwargs)
 
     # @property
     # def volume(self):
@@ -60,7 +61,7 @@ class Stream(SqlModel, SurrogatePK):
         )
 
 
-class Lecture(SqlModel, SurrogatePK):
+class Lecture(db.Model):
     __tablename__ = 'lecture'
 
     paper_id = db.Column(db.Unicode, primary_key=True)
@@ -69,19 +70,8 @@ class Lecture(SqlModel, SurrogatePK):
     start_time = db.Column(db.Unicode, primary_key=True)
     end_time = db.Column(db.Unicode)
     start_date = db.Column(db.Unicode, primary_key=True)
+    day = db.Column(db.Unicode, primary_key=True)
 
-
-    def __init__(self, paper_id, stream_id, room, start_time, end_time, start_date, **kwargs):
-        SqlModel.__init__(
-            self,
-            paper_id = paper_id,
-            stream_id = stream_id,
-            room = room,
-            start_time = start_time,
-            end_time = end_time,
-            start_date = start_date,
-            **kwargs
-        )
 
     def to_dict(self):
         return dict(
@@ -90,6 +80,7 @@ class Lecture(SqlModel, SurrogatePK):
             room=self.room,
             start_time=self.start_time,
             end_time=self.end_time,
-            start_date=self.start_date
+            start_date=self.start_date,
+            day=self.day
         )
 
