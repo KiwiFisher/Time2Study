@@ -1,7 +1,5 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup as BS
-from database.paperscraper.stream import stream
-from database.paperscraper.lecture import lecture
 
 class paper:
     code = ""

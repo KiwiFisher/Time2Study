@@ -25,7 +25,7 @@ class Stream:
     def __str__(self):
         return "{} - ({} classes)".format(self.steam_id, len(self.lectures))
 
-# A lectur eobject holds info for one lecture of a stream of a paper. Smallest atom
+# A lecture object holds info for one lecture of a stream of a paper. Smallest atom
 class Lecture:
     def __init__(self, day, room, start_time, end_time, start_date):
         self.day = time.strptime(day, "%a")

@@ -6,7 +6,7 @@ including timetable information"""
 
 from bs4 import BeautifulSoup as BS
 from selenium import webdriver as webdriver
-from database.paperscraper.paper import paper
+from paperscraper.paper import paper
 
 paper_dictionary = {}
 

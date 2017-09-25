@@ -1,4 +1,4 @@
-from database.paperscraper import paperscraper
+from paperscraper import paperscraper
 import MySQLdb
 
 

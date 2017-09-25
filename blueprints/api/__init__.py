@@ -2,13 +2,13 @@ from flask import jsonify, request
 from flask_classful import FlaskView, route
 from models import Paper, Stream, Lecture
 from utils import output_json
-import ast
 
 
 """
 The ApiView sets up the POST points for interaction with the API
 JSON data can be posted to the api index and a response will be sent with the
-appropriate data"""
+appropriate data
+"""
 class ApiView(FlaskView):
     route_base = '/api/'
     representations = {'application/json': output_json}
@@ -22,5 +22,19 @@ class ApiView(FlaskView):
 
         elif request.method == 'POST':
             #args = ast.literal_eval(list(request.form)[0])
-            return jsonify(Paper.query.filter_by(paper_id=request.args.to_dict()['paper_id']).first().to_dict())
+            request_type = request.args.to_dict()['request']
+
+            if request_type == 'info':
+                paper = Paper.query.filter_by(paper_id=request.args.to_dict()['paper_id']).first()
+                if paper is not None:
+
+                    return jsonify(paper.to_dict())
+                else:
+                    return jsonify('INVALID PAPER_ID')
+
+            elif request_type == 'algorithm':
+                return jsonify({'algorithm' : True})
+
+            else:
+                return 'INVALID API USAGE'
 

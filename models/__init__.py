@@ -1,5 +1,3 @@
-import utils
-#from database import SqlModel, Column, SurrogatePK
 from extensions import db
 
 
@@ -27,7 +25,6 @@ class Paper(db.Model):
         )
 
         for lecture in Lecture.query.filter_by(paper_id=self.paper_id):
-            print(lecture.to_dict())
             if lecture.stream_id not in info['streams']:
                 info['streams'][lecture.stream_id] = []
 
@@ -45,14 +42,6 @@ class Stream(db.Model):
 
     paper_id = db.Column(db.Unicode, primary_key=True)
     stream_id = db.Column(db.Unicode, primary_key=True)
-
-
-    # @property
-    # def volume(self):
-    #     mono_volume = utils.calculate_volume(Line.get_by_id(self.mono_id).diameter, Line.get_by_id(self.mono_id).packing, self.mono_length)
-    #     braid_volume = utils.calculate_volume(Line.get_by_id(self.braid_id).diameter, Line.get_by_id(self.braid_id).packing, self.braid_length)
-    #
-    #     return mono_volume + braid_volume
 
     def to_dict(self):
         return dict(

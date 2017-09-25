@@ -1,10 +1,9 @@
 import os
 
-
+"""
+This class configured the preset values for our flask app for normal use
+"""
 class Config(object):
-    """
-        Base Configuration for Flask (spool-wizard)
-        """
 
     ENV = None
 
@@ -38,6 +37,9 @@ class Config(object):
         pass
 
 
+"""
+This class configured the preset values for our flask app for dev use
+"""
 class DevConfig(Config):
     ENV = None
 
