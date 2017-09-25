@@ -335,6 +335,9 @@ for (papers_no  = 0; papers_no < 4; ++papers_no) {
             for (hour = (lecture.start_time / 100); hour < (lecture.end_time / 100); ++hour) {
                 var temp_time_slot = time_slot.concat(hour);
                 document.getElementById(temp_time_slot).className = "time-slot-enrolled-" + (papers_no+1);
+                if (hour == (lecture.start_time / 100)) {
+                    document.getElementById(temp_time_slot).innerHTML = paper.paper_name;
+                }
             }
 
         }
