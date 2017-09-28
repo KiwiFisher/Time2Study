@@ -6,7 +6,7 @@ from config import Config
 """
 This file has all of the methods needed to generate a fully configured flask app
 
-These are al generic
+These are all generic
 """
 
 

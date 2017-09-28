@@ -17,11 +17,9 @@ class ApiView(FlaskView):
     def index(self):
         if request.method == 'GET':
 
-            # return jsonify(Paper.query.filter_by(paper_id='COMP603').first().to_dict())
             return jsonify({'API' : 'Time2Study', 'version' : '0.1a'})
 
         elif request.method == 'POST':
-            #args = ast.literal_eval(list(request.form)[0])
             request_type = request.args.to_dict()['request']
 
             if request_type == 'info':
