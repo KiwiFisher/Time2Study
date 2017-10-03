@@ -5,482 +5,512 @@
     <title>Time2Study</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/css/calendar.css">
+    <link rel="stylesheet" href="../static/css/main-theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
 </head>
 <body>
-<div class="navbar">
-    <div class="navbar-brand">
-        <img src="../static/assets/logo.png" height="58" width="229"/>
-    </div>
-    <div class="navbar-gap"></div>
-</div>
-<div class="calendar">
+    <div class="navbar">
+        <div class="navbar-brand">
+            <img src="../static/assets/logo.png" height="58" width="229"/>
+        </div>
+        <div class="navbar-gap" >
 
-    <div class="day-heading"></div>
-    <div class="day-heading">Monday</div>
-    <div class="day-heading">Tuesday</div>
-    <div class="day-heading">Wednesday</div>
-    <div class="day-heading">Thursday</div>
-    <div class="day-heading">Friday</div>
-
-    <div class="column time-keys">
-        <div class="time-key">8am</div>
-        <div class="time-key">9am</div>
-        <div class="time-key">10am</div>
-        <div class="time-key">11am</div>
-        <div class="time-key">12am</div>
-        <div class="time-key">1pm</div>
-        <div class="time-key">2pm</div>
-        <div class="time-key">3pm</div>
-        <div class="time-key">4pm</div>
-        <div class="time-key">5pm</div>
-        <div class="time-key">6pm</div>
-        <div class="time-key">7pm</div>
-        <div class="time-key">8pm</div>
-        <div class="time-key">9pm</div>
-    </div>
-
-    <div id="monday">
-        <div id="mo-8" class="time-slot">
-            <div id="mo-8-1" class="time-slot-quarter"></div>
-            <div id="mo-8-2" class="time-slot-quarter"></div>
-            <div id="mo-8-3" class="time-slot-quarter"></div>
-            <div id="mo-8-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="mo-9" class="time-slot">
-            <div id="mo-9-1" class="time-slot-quarter"></div>
-            <div id="mo-9-2" class="time-slot-quarter"></div>
-            <div id="mo-9-3" class="time-slot-quarter"></div>
-            <div id="mo-9-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="mo-10" class="time-slot">
-            <div id="mo-10-1" class="time-slot-quarter"></div>
-            <div id="mo-10-2" class="time-slot-quarter"></div>
-            <div id="mo-10-3" class="time-slot-quarter"></div>
-            <div id="mo-10-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="mo-11" class="time-slot">
-            <div id="mo-11-1" class="time-slot-quarter"></div>
-            <div id="mo-11-2" class="time-slot-quarter"></div>
-            <div id="mo-11-3" class="time-slot-quarter"></div>
-            <div id="mo-11-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="mo-12" class="time-slot">
-            <div id="mo-12-1" class="time-slot-quarter"></div>
-            <div id="mo-12-2" class="time-slot-quarter"></div>
-            <div id="mo-12-3" class="time-slot-quarter"></div>
-            <div id="mo-12-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="mo-13" class="time-slot">
-            <div id="mo-13-1" class="time-slot-quarter"></div>
-            <div id="mo-13-2" class="time-slot-quarter"></div>
-            <div id="mo-13-3" class="time-slot-quarter"></div>
-            <div id="mo-13-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="mo-14" class="time-slot">
-            <div id="mo-14-1" class="time-slot-quarter"></div>
-            <div id="mo-14-2" class="time-slot-quarter"></div>
-            <div id="mo-14-3" class="time-slot-quarter"></div>
-            <div id="mo-14-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="mo-15" class="time-slot">
-            <div id="mo-15-1" class="time-slot-quarter"></div>
-            <div id="mo-15-2" class="time-slot-quarter"></div>
-            <div id="mo-15-3" class="time-slot-quarter"></div>
-            <div id="mo-15-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="mo-16" class="time-slot">
-            <div id="mo-16-1" class="time-slot-quarter"></div>
-            <div id="mo-16-2" class="time-slot-quarter"></div>
-            <div id="mo-16-3" class="time-slot-quarter"></div>
-            <div id="mo-16-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="mo-17" class="time-slot">
-            <div id="mo-17-1" class="time-slot-quarter"></div>
-            <div id="mo-17-2" class="time-slot-quarter"></div>
-            <div id="mo-17-3" class="time-slot-quarter"></div>
-            <div id="mo-17-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="mo-18" class="time-slot">
-            <div id="mo-18-1" class="time-slot-quarter"></div>
-            <div id="mo-18-2" class="time-slot-quarter"></div>
-            <div id="mo-18-3" class="time-slot-quarter"></div>
-            <div id="mo-18-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="mo-19" class="time-slot">
-            <div id="mo-19-1" class="time-slot-quarter"></div>
-            <div id="mo-19-2" class="time-slot-quarter"></div>
-            <div id="mo-19-3" class="time-slot-quarter"></div>
-            <div id="mo-19-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="mo-20" class="time-slot">
-            <div id="mo-20-1" class="time-slot-quarter"></div>
-            <div id="mo-20-2" class="time-slot-quarter"></div>
-            <div id="mo-20-3" class="time-slot-quarter"></div>
-            <div id="mo-20-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="mo-21" class="time-slot">
-            <div id="mo-21-1" class="time-slot-quarter"></div>
-            <div id="mo-21-2" class="time-slot-quarter"></div>
-            <div id="mo-21-3" class="time-slot-quarter"></div>
-            <div id="mo-21-4" class="time-slot-quarter"></div>
         </div>
     </div>
+    <div class="paper-selector">
+        <select class="selectpicker" id="paper_selection" data-live-search="true" title="Select a paper" onclick="addPaper()">
+            <option>Software Development Practice</option>
+            <option>Microeconomics</option>
+            <option>Program Design and Construction</option>
+            <option>Data and Process Modelling</option>
+            <option>Programming 1</option>
+            <option>Programming 2</option>
+            <option>Logical Database Design</option>
+            <option>Game Programming</option>
+            <option>Theory of Computation</option>
+            <option>Research Project</option>
+            <option>Programming Languages</option>
+            <option>Food Industry Legislation</option>
 
-    <div id="tuesday">
-        <div id="tu-8" class="time-slot">
-            <div id="tu-8-1" class="time-slot-quarter"></div>
-            <div id="tu-8-2" class="time-slot-quarter"></div>
-            <div id="tu-8-3" class="time-slot-quarter"></div>
-            <div id="tu-8-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="tu-9" class="time-slot">
-            <div id="tu-9-1" class="time-slot-quarter"></div>
-            <div id="tu-9-2" class="time-slot-quarter"></div>
-            <div id="tu-9-3" class="time-slot-quarter"></div>
-            <div id="tu-9-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="tu-10" class="time-slot">
-            <div id="tu-10-1" class="time-slot-quarter"></div>
-            <div id="tu-10-2" class="time-slot-quarter"></div>
-            <div id="tu-10-3" class="time-slot-quarter"></div>
-            <div id="tu-10-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="tu-11" class="time-slot">
-            <div id="tu-11-1" class="time-slot-quarter"></div>
-            <div id="tu-11-2" class="time-slot-quarter"></div>
-            <div id="tu-11-3" class="time-slot-quarter"></div>
-            <div id="tu-11-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="tu-12" class="time-slot">
-            <div id="tu-12-1" class="time-slot-quarter"></div>
-            <div id="tu-12-2" class="time-slot-quarter"></div>
-            <div id="tu-12-3" class="time-slot-quarter"></div>
-            <div id="tu-12-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="tu-13" class="time-slot">
-            <div id="tu-13-1" class="time-slot-quarter"></div>
-            <div id="tu-13-2" class="time-slot-quarter"></div>
-            <div id="tu-13-3" class="time-slot-quarter"></div>
-            <div id="tu-13-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="tu-14" class="time-slot">
-            <div id="tu-14-1" class="time-slot-quarter"></div>
-            <div id="tu-14-2" class="time-slot-quarter"></div>
-            <div id="tu-14-3" class="time-slot-quarter"></div>
-            <div id="tu-14-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="tu-15" class="time-slot">
-            <div id="tu-15-1" class="time-slot-quarter"></div>
-            <div id="tu-15-2" class="time-slot-quarter"></div>
-            <div id="tu-15-3" class="time-slot-quarter"></div>
-            <div id="tu-15-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="tu-16" class="time-slot">
-            <div id="tu-16-1" class="time-slot-quarter"></div>
-            <div id="tu-16-2" class="time-slot-quarter"></div>
-            <div id="tu-16-3" class="time-slot-quarter"></div>
-            <div id="tu-16-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="tu-17" class="time-slot">
-            <div id="tu-17-1" class="time-slot-quarter"></div>
-            <div id="tu-17-2" class="time-slot-quarter"></div>
-            <div id="tu-17-3" class="time-slot-quarter"></div>
-            <div id="tu-17-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="tu-18" class="time-slot">
-            <div id="tu-18-1" class="time-slot-quarter"></div>
-            <div id="tu-18-2" class="time-slot-quarter"></div>
-            <div id="tu-18-3" class="time-slot-quarter"></div>
-            <div id="tu-18-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="tu-19" class="time-slot">
-            <div id="tu-19-1" class="time-slot-quarter"></div>
-            <div id="tu-19-2" class="time-slot-quarter"></div>
-            <div id="tu-19-3" class="time-slot-quarter"></div>
-            <div id="tu-19-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="tu-20" class="time-slot">
-            <div id="tu-20-1" class="time-slot-quarter"></div>
-            <div id="tu-20-2" class="time-slot-quarter"></div>
-            <div id="tu-20-3" class="time-slot-quarter"></div>
-            <div id="tu-20-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="tu-21" class="time-slot">
-            <div id="tu-21-1" class="time-slot-quarter"></div>
-            <div id="tu-21-2" class="time-slot-quarter"></div>
-            <div id="tu-21-3" class="time-slot-quarter"></div>
-            <div id="tu-21-4" class="time-slot-quarter"></div>
-        </div>
-    </div>
-
-    <div id="wednesday">
-        <div id="we-8" class="time-slot">
-            <div id="we-8-1" class="time-slot-quarter"></div>
-            <div id="we-8-2" class="time-slot-quarter"></div>
-            <div id="we-8-3" class="time-slot-quarter"></div>
-            <div id="we-8-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="we-9" class="time-slot">
-            <div id="we-9-1" class="time-slot-quarter"></div>
-            <div id="we-9-2" class="time-slot-quarter"></div>
-            <div id="we-9-3" class="time-slot-quarter"></div>
-            <div id="we-9-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="we-10" class="time-slot">
-            <div id="we-10-1" class="time-slot-quarter"></div>
-            <div id="we-10-2" class="time-slot-quarter"></div>
-            <div id="we-10-3" class="time-slot-quarter"></div>
-            <div id="we-10-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="we-11" class="time-slot">
-            <div id="we-11-1" class="time-slot-quarter"></div>
-            <div id="we-11-2" class="time-slot-quarter"></div>
-            <div id="we-11-3" class="time-slot-quarter"></div>
-            <div id="we-11-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="we-12" class="time-slot">
-            <div id="we-12-1" class="time-slot-quarter"></div>
-            <div id="we-12-2" class="time-slot-quarter"></div>
-            <div id="we-12-3" class="time-slot-quarter"></div>
-            <div id="we-12-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="we-13" class="time-slot">
-            <div id="we-13-1" class="time-slot-quarter"></div>
-            <div id="we-13-2" class="time-slot-quarter"></div>
-            <div id="we-13-3" class="time-slot-quarter"></div>
-            <div id="we-13-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="we-14" class="time-slot">
-            <div id="we-14-1" class="time-slot-quarter"></div>
-            <div id="we-14-2" class="time-slot-quarter"></div>
-            <div id="we-14-3" class="time-slot-quarter"></div>
-            <div id="we-14-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="we-15" class="time-slot">
-            <div id="we-15-1" class="time-slot-quarter"></div>
-            <div id="we-15-2" class="time-slot-quarter"></div>
-            <div id="we-15-3" class="time-slot-quarter"></div>
-            <div id="we-15-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="we-16" class="time-slot">
-            <div id="we-16-1" class="time-slot-quarter"></div>
-            <div id="we-16-2" class="time-slot-quarter"></div>
-            <div id="we-16-3" class="time-slot-quarter"></div>
-            <div id="we-16-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="we-17" class="time-slot">
-            <div id="we-17-1" class="time-slot-quarter"></div>
-            <div id="we-17-2" class="time-slot-quarter"></div>
-            <div id="we-17-3" class="time-slot-quarter"></div>
-            <div id="we-17-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="we-18" class="time-slot">
-            <div id="we-18-1" class="time-slot-quarter"></div>
-            <div id="we-18-2" class="time-slot-quarter"></div>
-            <div id="we-18-3" class="time-slot-quarter"></div>
-            <div id="we-18-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="we-19" class="time-slot">
-            <div id="we-19-1" class="time-slot-quarter"></div>
-            <div id="we-19-2" class="time-slot-quarter"></div>
-            <div id="we-19-3" class="time-slot-quarter"></div>
-            <div id="we-19-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="we-20" class="time-slot">
-            <div id="we-20-1" class="time-slot-quarter"></div>
-            <div id="we-20-2" class="time-slot-quarter"></div>
-            <div id="we-20-3" class="time-slot-quarter"></div>
-            <div id="we-20-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="we-21" class="time-slot">
-            <div id="we-21-1" class="time-slot-quarter"></div>
-            <div id="we-21-2" class="time-slot-quarter"></div>
-            <div id="we-21-3" class="time-slot-quarter"></div>
-            <div id="we-21-4" class="time-slot-quarter"></div>
-        </div>
-    </div>
-
-    <div id="thursday" class="column">
-        <div id="th-8" class="time-slot">
-            <div id="th-8-1" class="time-slot-quarter"></div>
-            <div id="th-8-2" class="time-slot-quarter"></div>
-            <div id="th-8-3" class="time-slot-quarter"></div>
-            <div id="th-8-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="th-9" class="time-slot">
-            <div id="th-9-1" class="time-slot-quarter"></div>
-            <div id="th-9-2" class="time-slot-quarter"></div>
-            <div id="th-9-3" class="time-slot-quarter"></div>
-            <div id="th-9-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="th-10" class="time-slot">
-            <div id="th-10-1" class="time-slot-quarter"></div>
-            <div id="th-10-2" class="time-slot-quarter"></div>
-            <div id="th-10-3" class="time-slot-quarter"></div>
-            <div id="th-10-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="th-11" class="time-slot">
-            <div id="th-11-1" class="time-slot-quarter"></div>
-            <div id="th-11-2" class="time-slot-quarter"></div>
-            <div id="th-11-3" class="time-slot-quarter"></div>
-            <div id="th-11-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="th-12" class="time-slot">
-            <div id="th-12-1" class="time-slot-quarter"></div>
-            <div id="th-12-2" class="time-slot-quarter"></div>
-            <div id="th-12-3" class="time-slot-quarter"></div>
-            <div id="th-12-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="th-13" class="time-slot">
-            <div id="th-13-1" class="time-slot-quarter"></div>
-            <div id="th-13-2" class="time-slot-quarter"></div>
-            <div id="th-13-3" class="time-slot-quarter"></div>
-            <div id="th-13-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="th-14" class="time-slot">
-            <div id="th-14-1" class="time-slot-quarter"></div>
-            <div id="th-14-2" class="time-slot-quarter"></div>
-            <div id="th-14-3" class="time-slot-quarter"></div>
-            <div id="th-14-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="th-15" class="time-slot">
-            <div id="th-15-1" class="time-slot-quarter"></div>
-            <div id="th-15-2" class="time-slot-quarter"></div>
-            <div id="th-15-3" class="time-slot-quarter"></div>
-            <div id="th-15-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="th-16" class="time-slot">
-            <div id="th-16-1" class="time-slot-quarter"></div>
-            <div id="th-16-2" class="time-slot-quarter"></div>
-            <div id="th-16-3" class="time-slot-quarter"></div>
-            <div id="th-16-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="th-17" class="time-slot">
-            <div id="th-17-1" class="time-slot-quarter"></div>
-            <div id="th-17-2" class="time-slot-quarter"></div>
-            <div id="th-17-3" class="time-slot-quarter"></div>
-            <div id="th-17-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="th-18" class="time-slot">
-            <div id="th-18-1" class="time-slot-quarter"></div>
-            <div id="th-18-2" class="time-slot-quarter"></div>
-            <div id="th-18-3" class="time-slot-quarter"></div>
-            <div id="th-18-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="th-19" class="time-slot">
-            <div id="th-19-1" class="time-slot-quarter"></div>
-            <div id="th-19-2" class="time-slot-quarter"></div>
-            <div id="th-19-3" class="time-slot-quarter"></div>
-            <div id="th-19-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="th-20" class="time-slot">
-            <div id="th-20-1" class="time-slot-quarter"></div>
-            <div id="th-20-2" class="time-slot-quarter"></div>
-            <div id="th-20-3" class="time-slot-quarter"></div>
-            <div id="th-20-4" class="time-slot-quarter"></div></div>
-        <div id="th-21" class="time-slot">
-            <div id="th-21-1" class="time-slot-quarter"></div>
-            <div id="th-21-2" class="time-slot-quarter"></div>
-            <div id="th-21-3" class="time-slot-quarter"></div>
-            <div id="th-21-4" class="time-slot-quarter"></div>
-        </div>
-    </div>
-
-    <div id="friday" class="column">
-        <div id="fr-8" class="time-slot">
-            <div id="fr-8-1" class="time-slot-quarter"></div>
-            <div id="fr-8-2" class="time-slot-quarter"></div>
-            <div id="fr-8-3" class="time-slot-quarter"></div>
-            <div id="fr-8-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="fr-9" class="time-slot">
-            <div id="fr-9-1" class="time-slot-quarter"></div>
-            <div id="fr-9-2" class="time-slot-quarter"></div>
-            <div id="fr-9-3" class="time-slot-quarter"></div>
-            <div id="fr-9-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="fr-10" class="time-slot">
-            <div id="fr-10-1" class="time-slot-quarter"></div>
-            <div id="fr-10-2" class="time-slot-quarter"></div>
-            <div id="fr-10-3" class="time-slot-quarter"></div>
-            <div id="fr-10-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="fr-11" class="time-slot">
-            <div id="fr-11-1" class="time-slot-quarter"></div>
-            <div id="fr-11-2" class="time-slot-quarter"></div>
-            <div id="fr-11-3" class="time-slot-quarter"></div>
-            <div id="fr-11-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="fr-12" class="time-slot">
-            <div id="fr-12-1" class="time-slot-quarter"></div>
-            <div id="fr-12-2" class="time-slot-quarter"></div>
-            <div id="fr-12-3" class="time-slot-quarter"></div>
-            <div id="fr-12-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="fr-13" class="time-slot">
-            <div id="fr-13-1" class="time-slot-quarter"></div>
-            <div id="fr-13-2" class="time-slot-quarter"></div>
-            <div id="fr-13-3" class="time-slot-quarter"></div>
-            <div id="fr-13-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="fr-14" class="time-slot">
-            <div id="fr-14-1" class="time-slot-quarter"></div>
-            <div id="fr-14-2" class="time-slot-quarter"></div>
-            <div id="fr-14-3" class="time-slot-quarter"></div>
-            <div id="fr-14-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="fr-15" class="time-slot">
-            <div id="fr-15-1" class="time-slot-quarter"></div>
-            <div id="fr-15-2" class="time-slot-quarter"></div>
-            <div id="fr-15-3" class="time-slot-quarter"></div>
-            <div id="fr-15-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="fr-16" class="time-slot">
-            <div id="fr-16-1" class="time-slot-quarter"></div>
-            <div id="fr-16-2" class="time-slot-quarter"></div>
-            <div id="fr-16-3" class="time-slot-quarter"></div>
-            <div id="fr-16-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="fr-17" class="time-slot">
-            <div id="fr-17-1" class="time-slot-quarter"></div>
-            <div id="fr-17-2" class="time-slot-quarter"></div>
-            <div id="fr-17-3" class="time-slot-quarter"></div>
-            <div id="fr-17-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="fr-18" class="time-slot">
-            <div id="fr-18-1" class="time-slot-quarter"></div>
-            <div id="fr-18-2" class="time-slot-quarter"></div>
-            <div id="fr-18-3" class="time-slot-quarter"></div>
-            <div id="fr-18-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="fr-19" class="time-slot">
-            <div id="fr-19-1" class="time-slot-quarter"></div>
-            <div id="fr-19-2" class="time-slot-quarter"></div>
-            <div id="fr-19-3" class="time-slot-quarter"></div>
-            <div id="fr-19-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="fr-20" class="time-slot">
-            <div id="fr-20-1" class="time-slot-quarter"></div>
-            <div id="fr-20-2" class="time-slot-quarter"></div>
-            <div id="fr-20-3" class="time-slot-quarter"></div>
-            <div id="fr-20-4" class="time-slot-quarter"></div>
-        </div>
-        <div id="fr-21" class="time-slot">
-            <div id="fr-21-1" class="time-slot-quarter"></div>
-            <div id="fr-21-2" class="time-slot-quarter"></div>
-            <div id="fr-21-3" class="time-slot-quarter"></div>
-            <div id="fr-21-4" class="time-slot-quarter"></div>
-        </div>
-    </div>
+        </select>
+        <button type="button" class="btn" id="paper1">Microeconomics</button>
+        <button type="button" class="btn" id="paper2">Software Development Practice</button>
+        <button type="button" class="btn" id="paper3">Data & Process Modelling</button>
+        <button type="button" class="btn" id="paper4">Program Design and Construction</button>
 
     </div>
 
+    <div class="calendar">
+
+        <div class="day-heading"></div>
+        <div class="day-heading">Monday</div>
+        <div class="day-heading">Tuesday</div>
+        <div class="day-heading">Wednesday</div>
+        <div class="day-heading">Thursday</div>
+        <div class="day-heading">Friday</div>
+
+        <div class="column time-keys">
+            <div class="time-key">8am</div>
+            <div class="time-key">9am</div>
+            <div class="time-key">10am</div>
+            <div class="time-key">11am</div>
+            <div class="time-key">12am</div>
+            <div class="time-key">1pm</div>
+            <div class="time-key">2pm</div>
+            <div class="time-key">3pm</div>
+            <div class="time-key">4pm</div>
+            <div class="time-key">5pm</div>
+            <div class="time-key">6pm</div>
+            <div class="time-key">7pm</div>
+            <div class="time-key">8pm</div>
+            <div class="time-key">9pm</div>
+        </div>
+
+        <div id="monday">
+            <div id="mo-8" class="time-slot">
+                <div id="mo-8-1" class="time-slot-quarter"></div>
+                <div id="mo-8-2" class="time-slot-quarter"></div>
+                <div id="mo-8-3" class="time-slot-quarter"></div>
+                <div id="mo-8-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="mo-9" class="time-slot">
+                <div id="mo-9-1" class="time-slot-quarter"></div>
+                <div id="mo-9-2" class="time-slot-quarter"></div>
+                <div id="mo-9-3" class="time-slot-quarter"></div>
+                <div id="mo-9-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="mo-10" class="time-slot">
+                <div id="mo-10-1" class="time-slot-quarter"></div>
+                <div id="mo-10-2" class="time-slot-quarter"></div>
+                <div id="mo-10-3" class="time-slot-quarter"></div>
+                <div id="mo-10-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="mo-11" class="time-slot">
+                <div id="mo-11-1" class="time-slot-quarter"></div>
+                <div id="mo-11-2" class="time-slot-quarter"></div>
+                <div id="mo-11-3" class="time-slot-quarter"></div>
+                <div id="mo-11-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="mo-12" class="time-slot">
+                <div id="mo-12-1" class="time-slot-quarter"></div>
+                <div id="mo-12-2" class="time-slot-quarter"></div>
+                <div id="mo-12-3" class="time-slot-quarter"></div>
+                <div id="mo-12-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="mo-13" class="time-slot">
+                <div id="mo-13-1" class="time-slot-quarter"></div>
+                <div id="mo-13-2" class="time-slot-quarter"></div>
+                <div id="mo-13-3" class="time-slot-quarter"></div>
+                <div id="mo-13-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="mo-14" class="time-slot">
+                <div id="mo-14-1" class="time-slot-quarter"></div>
+                <div id="mo-14-2" class="time-slot-quarter"></div>
+                <div id="mo-14-3" class="time-slot-quarter"></div>
+                <div id="mo-14-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="mo-15" class="time-slot">
+                <div id="mo-15-1" class="time-slot-quarter"></div>
+                <div id="mo-15-2" class="time-slot-quarter"></div>
+                <div id="mo-15-3" class="time-slot-quarter"></div>
+                <div id="mo-15-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="mo-16" class="time-slot">
+                <div id="mo-16-1" class="time-slot-quarter"></div>
+                <div id="mo-16-2" class="time-slot-quarter"></div>
+                <div id="mo-16-3" class="time-slot-quarter"></div>
+                <div id="mo-16-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="mo-17" class="time-slot">
+                <div id="mo-17-1" class="time-slot-quarter"></div>
+                <div id="mo-17-2" class="time-slot-quarter"></div>
+                <div id="mo-17-3" class="time-slot-quarter"></div>
+                <div id="mo-17-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="mo-18" class="time-slot">
+                <div id="mo-18-1" class="time-slot-quarter"></div>
+                <div id="mo-18-2" class="time-slot-quarter"></div>
+                <div id="mo-18-3" class="time-slot-quarter"></div>
+                <div id="mo-18-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="mo-19" class="time-slot">
+                <div id="mo-19-1" class="time-slot-quarter"></div>
+                <div id="mo-19-2" class="time-slot-quarter"></div>
+                <div id="mo-19-3" class="time-slot-quarter"></div>
+                <div id="mo-19-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="mo-20" class="time-slot">
+                <div id="mo-20-1" class="time-slot-quarter"></div>
+                <div id="mo-20-2" class="time-slot-quarter"></div>
+                <div id="mo-20-3" class="time-slot-quarter"></div>
+                <div id="mo-20-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="mo-21" class="time-slot">
+                <div id="mo-21-1" class="time-slot-quarter"></div>
+                <div id="mo-21-2" class="time-slot-quarter"></div>
+                <div id="mo-21-3" class="time-slot-quarter"></div>
+                <div id="mo-21-4" class="time-slot-quarter"></div>
+            </div>
+        </div>
+
+        <div id="tuesday">
+            <div id="tu-8" class="time-slot">
+                <div id="tu-8-1" class="time-slot-quarter"></div>
+                <div id="tu-8-2" class="time-slot-quarter"></div>
+                <div id="tu-8-3" class="time-slot-quarter"></div>
+                <div id="tu-8-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="tu-9" class="time-slot">
+                <div id="tu-9-1" class="time-slot-quarter"></div>
+                <div id="tu-9-2" class="time-slot-quarter"></div>
+                <div id="tu-9-3" class="time-slot-quarter"></div>
+                <div id="tu-9-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="tu-10" class="time-slot">
+                <div id="tu-10-1" class="time-slot-quarter"></div>
+                <div id="tu-10-2" class="time-slot-quarter"></div>
+                <div id="tu-10-3" class="time-slot-quarter"></div>
+                <div id="tu-10-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="tu-11" class="time-slot">
+                <div id="tu-11-1" class="time-slot-quarter"></div>
+                <div id="tu-11-2" class="time-slot-quarter"></div>
+                <div id="tu-11-3" class="time-slot-quarter"></div>
+                <div id="tu-11-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="tu-12" class="time-slot">
+                <div id="tu-12-1" class="time-slot-quarter"></div>
+                <div id="tu-12-2" class="time-slot-quarter"></div>
+                <div id="tu-12-3" class="time-slot-quarter"></div>
+                <div id="tu-12-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="tu-13" class="time-slot">
+                <div id="tu-13-1" class="time-slot-quarter"></div>
+                <div id="tu-13-2" class="time-slot-quarter"></div>
+                <div id="tu-13-3" class="time-slot-quarter"></div>
+                <div id="tu-13-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="tu-14" class="time-slot">
+                <div id="tu-14-1" class="time-slot-quarter"></div>
+                <div id="tu-14-2" class="time-slot-quarter"></div>
+                <div id="tu-14-3" class="time-slot-quarter"></div>
+                <div id="tu-14-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="tu-15" class="time-slot">
+                <div id="tu-15-1" class="time-slot-quarter"></div>
+                <div id="tu-15-2" class="time-slot-quarter"></div>
+                <div id="tu-15-3" class="time-slot-quarter"></div>
+                <div id="tu-15-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="tu-16" class="time-slot">
+                <div id="tu-16-1" class="time-slot-quarter"></div>
+                <div id="tu-16-2" class="time-slot-quarter"></div>
+                <div id="tu-16-3" class="time-slot-quarter"></div>
+                <div id="tu-16-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="tu-17" class="time-slot">
+                <div id="tu-17-1" class="time-slot-quarter"></div>
+                <div id="tu-17-2" class="time-slot-quarter"></div>
+                <div id="tu-17-3" class="time-slot-quarter"></div>
+                <div id="tu-17-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="tu-18" class="time-slot">
+                <div id="tu-18-1" class="time-slot-quarter"></div>
+                <div id="tu-18-2" class="time-slot-quarter"></div>
+                <div id="tu-18-3" class="time-slot-quarter"></div>
+                <div id="tu-18-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="tu-19" class="time-slot">
+                <div id="tu-19-1" class="time-slot-quarter"></div>
+                <div id="tu-19-2" class="time-slot-quarter"></div>
+                <div id="tu-19-3" class="time-slot-quarter"></div>
+                <div id="tu-19-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="tu-20" class="time-slot">
+                <div id="tu-20-1" class="time-slot-quarter"></div>
+                <div id="tu-20-2" class="time-slot-quarter"></div>
+                <div id="tu-20-3" class="time-slot-quarter"></div>
+                <div id="tu-20-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="tu-21" class="time-slot">
+                <div id="tu-21-1" class="time-slot-quarter"></div>
+                <div id="tu-21-2" class="time-slot-quarter"></div>
+                <div id="tu-21-3" class="time-slot-quarter"></div>
+                <div id="tu-21-4" class="time-slot-quarter"></div>
+            </div>
+        </div>
+
+        <div id="wednesday">
+            <div id="we-8" class="time-slot">
+                <div id="we-8-1" class="time-slot-quarter"></div>
+                <div id="we-8-2" class="time-slot-quarter"></div>
+                <div id="we-8-3" class="time-slot-quarter"></div>
+                <div id="we-8-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="we-9" class="time-slot">
+                <div id="we-9-1" class="time-slot-quarter"></div>
+                <div id="we-9-2" class="time-slot-quarter"></div>
+                <div id="we-9-3" class="time-slot-quarter"></div>
+                <div id="we-9-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="we-10" class="time-slot">
+                <div id="we-10-1" class="time-slot-quarter"></div>
+                <div id="we-10-2" class="time-slot-quarter"></div>
+                <div id="we-10-3" class="time-slot-quarter"></div>
+                <div id="we-10-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="we-11" class="time-slot">
+                <div id="we-11-1" class="time-slot-quarter"></div>
+                <div id="we-11-2" class="time-slot-quarter"></div>
+                <div id="we-11-3" class="time-slot-quarter"></div>
+                <div id="we-11-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="we-12" class="time-slot">
+                <div id="we-12-1" class="time-slot-quarter"></div>
+                <div id="we-12-2" class="time-slot-quarter"></div>
+                <div id="we-12-3" class="time-slot-quarter"></div>
+                <div id="we-12-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="we-13" class="time-slot">
+                <div id="we-13-1" class="time-slot-quarter"></div>
+                <div id="we-13-2" class="time-slot-quarter"></div>
+                <div id="we-13-3" class="time-slot-quarter"></div>
+                <div id="we-13-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="we-14" class="time-slot">
+                <div id="we-14-1" class="time-slot-quarter"></div>
+                <div id="we-14-2" class="time-slot-quarter"></div>
+                <div id="we-14-3" class="time-slot-quarter"></div>
+                <div id="we-14-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="we-15" class="time-slot">
+                <div id="we-15-1" class="time-slot-quarter"></div>
+                <div id="we-15-2" class="time-slot-quarter"></div>
+                <div id="we-15-3" class="time-slot-quarter"></div>
+                <div id="we-15-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="we-16" class="time-slot">
+                <div id="we-16-1" class="time-slot-quarter"></div>
+                <div id="we-16-2" class="time-slot-quarter"></div>
+                <div id="we-16-3" class="time-slot-quarter"></div>
+                <div id="we-16-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="we-17" class="time-slot">
+                <div id="we-17-1" class="time-slot-quarter"></div>
+                <div id="we-17-2" class="time-slot-quarter"></div>
+                <div id="we-17-3" class="time-slot-quarter"></div>
+                <div id="we-17-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="we-18" class="time-slot">
+                <div id="we-18-1" class="time-slot-quarter"></div>
+                <div id="we-18-2" class="time-slot-quarter"></div>
+                <div id="we-18-3" class="time-slot-quarter"></div>
+                <div id="we-18-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="we-19" class="time-slot">
+                <div id="we-19-1" class="time-slot-quarter"></div>
+                <div id="we-19-2" class="time-slot-quarter"></div>
+                <div id="we-19-3" class="time-slot-quarter"></div>
+                <div id="we-19-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="we-20" class="time-slot">
+                <div id="we-20-1" class="time-slot-quarter"></div>
+                <div id="we-20-2" class="time-slot-quarter"></div>
+                <div id="we-20-3" class="time-slot-quarter"></div>
+                <div id="we-20-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="we-21" class="time-slot">
+                <div id="we-21-1" class="time-slot-quarter"></div>
+                <div id="we-21-2" class="time-slot-quarter"></div>
+                <div id="we-21-3" class="time-slot-quarter"></div>
+                <div id="we-21-4" class="time-slot-quarter"></div>
+            </div>
+        </div>
+
+        <div id="thursday" class="column">
+            <div id="th-8" class="time-slot">
+                <div id="th-8-1" class="time-slot-quarter"></div>
+                <div id="th-8-2" class="time-slot-quarter"></div>
+                <div id="th-8-3" class="time-slot-quarter"></div>
+                <div id="th-8-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="th-9" class="time-slot">
+                <div id="th-9-1" class="time-slot-quarter"></div>
+                <div id="th-9-2" class="time-slot-quarter"></div>
+                <div id="th-9-3" class="time-slot-quarter"></div>
+                <div id="th-9-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="th-10" class="time-slot">
+                <div id="th-10-1" class="time-slot-quarter"></div>
+                <div id="th-10-2" class="time-slot-quarter"></div>
+                <div id="th-10-3" class="time-slot-quarter"></div>
+                <div id="th-10-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="th-11" class="time-slot">
+                <div id="th-11-1" class="time-slot-quarter"></div>
+                <div id="th-11-2" class="time-slot-quarter"></div>
+                <div id="th-11-3" class="time-slot-quarter"></div>
+                <div id="th-11-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="th-12" class="time-slot">
+                <div id="th-12-1" class="time-slot-quarter"></div>
+                <div id="th-12-2" class="time-slot-quarter"></div>
+                <div id="th-12-3" class="time-slot-quarter"></div>
+                <div id="th-12-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="th-13" class="time-slot">
+                <div id="th-13-1" class="time-slot-quarter"></div>
+                <div id="th-13-2" class="time-slot-quarter"></div>
+                <div id="th-13-3" class="time-slot-quarter"></div>
+                <div id="th-13-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="th-14" class="time-slot">
+                <div id="th-14-1" class="time-slot-quarter"></div>
+                <div id="th-14-2" class="time-slot-quarter"></div>
+                <div id="th-14-3" class="time-slot-quarter"></div>
+                <div id="th-14-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="th-15" class="time-slot">
+                <div id="th-15-1" class="time-slot-quarter"></div>
+                <div id="th-15-2" class="time-slot-quarter"></div>
+                <div id="th-15-3" class="time-slot-quarter"></div>
+                <div id="th-15-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="th-16" class="time-slot">
+                <div id="th-16-1" class="time-slot-quarter"></div>
+                <div id="th-16-2" class="time-slot-quarter"></div>
+                <div id="th-16-3" class="time-slot-quarter"></div>
+                <div id="th-16-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="th-17" class="time-slot">
+                <div id="th-17-1" class="time-slot-quarter"></div>
+                <div id="th-17-2" class="time-slot-quarter"></div>
+                <div id="th-17-3" class="time-slot-quarter"></div>
+                <div id="th-17-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="th-18" class="time-slot">
+                <div id="th-18-1" class="time-slot-quarter"></div>
+                <div id="th-18-2" class="time-slot-quarter"></div>
+                <div id="th-18-3" class="time-slot-quarter"></div>
+                <div id="th-18-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="th-19" class="time-slot">
+                <div id="th-19-1" class="time-slot-quarter"></div>
+                <div id="th-19-2" class="time-slot-quarter"></div>
+                <div id="th-19-3" class="time-slot-quarter"></div>
+                <div id="th-19-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="th-20" class="time-slot">
+                <div id="th-20-1" class="time-slot-quarter"></div>
+                <div id="th-20-2" class="time-slot-quarter"></div>
+                <div id="th-20-3" class="time-slot-quarter"></div>
+                <div id="th-20-4" class="time-slot-quarter"></div></div>
+            <div id="th-21" class="time-slot">
+                <div id="th-21-1" class="time-slot-quarter"></div>
+                <div id="th-21-2" class="time-slot-quarter"></div>
+                <div id="th-21-3" class="time-slot-quarter"></div>
+                <div id="th-21-4" class="time-slot-quarter"></div>
+            </div>
+        </div>
+
+        <div id="friday" class="column">
+            <div id="fr-8" class="time-slot">
+                <div id="fr-8-1" class="time-slot-quarter"></div>
+                <div id="fr-8-2" class="time-slot-quarter"></div>
+                <div id="fr-8-3" class="time-slot-quarter"></div>
+                <div id="fr-8-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="fr-9" class="time-slot">
+                <div id="fr-9-1" class="time-slot-quarter"></div>
+                <div id="fr-9-2" class="time-slot-quarter"></div>
+                <div id="fr-9-3" class="time-slot-quarter"></div>
+                <div id="fr-9-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="fr-10" class="time-slot">
+                <div id="fr-10-1" class="time-slot-quarter"></div>
+                <div id="fr-10-2" class="time-slot-quarter"></div>
+                <div id="fr-10-3" class="time-slot-quarter"></div>
+                <div id="fr-10-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="fr-11" class="time-slot">
+                <div id="fr-11-1" class="time-slot-quarter"></div>
+                <div id="fr-11-2" class="time-slot-quarter"></div>
+                <div id="fr-11-3" class="time-slot-quarter"></div>
+                <div id="fr-11-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="fr-12" class="time-slot">
+                <div id="fr-12-1" class="time-slot-quarter"></div>
+                <div id="fr-12-2" class="time-slot-quarter"></div>
+                <div id="fr-12-3" class="time-slot-quarter"></div>
+                <div id="fr-12-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="fr-13" class="time-slot">
+                <div id="fr-13-1" class="time-slot-quarter"></div>
+                <div id="fr-13-2" class="time-slot-quarter"></div>
+                <div id="fr-13-3" class="time-slot-quarter"></div>
+                <div id="fr-13-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="fr-14" class="time-slot">
+                <div id="fr-14-1" class="time-slot-quarter"></div>
+                <div id="fr-14-2" class="time-slot-quarter"></div>
+                <div id="fr-14-3" class="time-slot-quarter"></div>
+                <div id="fr-14-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="fr-15" class="time-slot">
+                <div id="fr-15-1" class="time-slot-quarter"></div>
+                <div id="fr-15-2" class="time-slot-quarter"></div>
+                <div id="fr-15-3" class="time-slot-quarter"></div>
+                <div id="fr-15-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="fr-16" class="time-slot">
+                <div id="fr-16-1" class="time-slot-quarter"></div>
+                <div id="fr-16-2" class="time-slot-quarter"></div>
+                <div id="fr-16-3" class="time-slot-quarter"></div>
+                <div id="fr-16-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="fr-17" class="time-slot">
+                <div id="fr-17-1" class="time-slot-quarter"></div>
+                <div id="fr-17-2" class="time-slot-quarter"></div>
+                <div id="fr-17-3" class="time-slot-quarter"></div>
+                <div id="fr-17-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="fr-18" class="time-slot">
+                <div id="fr-18-1" class="time-slot-quarter"></div>
+                <div id="fr-18-2" class="time-slot-quarter"></div>
+                <div id="fr-18-3" class="time-slot-quarter"></div>
+                <div id="fr-18-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="fr-19" class="time-slot">
+                <div id="fr-19-1" class="time-slot-quarter"></div>
+                <div id="fr-19-2" class="time-slot-quarter"></div>
+                <div id="fr-19-3" class="time-slot-quarter"></div>
+                <div id="fr-19-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="fr-20" class="time-slot">
+                <div id="fr-20-1" class="time-slot-quarter"></div>
+                <div id="fr-20-2" class="time-slot-quarter"></div>
+                <div id="fr-20-3" class="time-slot-quarter"></div>
+                <div id="fr-20-4" class="time-slot-quarter"></div>
+            </div>
+            <div id="fr-21" class="time-slot">
+                <div id="fr-21-1" class="time-slot-quarter"></div>
+                <div id="fr-21-2" class="time-slot-quarter"></div>
+                <div id="fr-21-3" class="time-slot-quarter"></div>
+                <div id="fr-21-4" class="time-slot-quarter"></div>
+            </div>
+        </div>
+
+        </div>
+
+    <button type="button" class="btn" id="update" onclick="updateTimetable()">Update timetable</button>
 
 </body>
 
 <footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../static/js/main.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 </footer>
 </html>

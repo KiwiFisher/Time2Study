@@ -46,38 +46,33 @@
 
 .navbar-gap {
     height: 80px;
-    background-color: dimgrey;
+    background-color: black; //dimgrey
 }
 
 /** First paper**/
 .time-slot-enrolled-1{
-    border-top: solid darkgray;
     height: 40px;
     margin: 0px;
-    background-color: red;
-
+    background-color: #CD5360;
 }
 
 /** Second paper**/
 .time-slot-enrolled-2{
-    border-top: solid darkgray;
     height: 40px;
     margin: 0px;
-    background-color: green;
+    background-color: #88D317;
 }
 
 /** Third paper**/
 .time-slot-enrolled-3{
-    border-top: solid darkgray;
     height: 40px;
     margin: 0px;
-    background-color: blue;
+    background-color: #43C0F6;
 }
 
 /** Fourth paper**/
 .time-slot-enrolled-4{
-    border-top: solid darkgray;
     height: 40px;
     margin: 0px;
-    background-color: darkorange;
+    background-color: #F19F4D;
 }
