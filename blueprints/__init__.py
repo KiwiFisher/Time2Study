@@ -5,8 +5,10 @@ from .api import ApiView
 
 
 def home_view():
+    papers = Paper.query.all()
 
-    return render_template("index.html")
+    paper_data = [[paper.paper_id, paper.paper_name] for paper in papers]
+    return render_template("index.html", _paper_data=paper_data)
 
 
 class HomeView(FlaskView):

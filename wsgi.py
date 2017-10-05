@@ -15,6 +15,6 @@ If this class is run directly, then start the flask app with the debugger and re
 run_simple is a method from werkzueg, a WSGI utility library. It lets us
 """
 if __name__ == "__main__":
-    run_simple('0.0.0.0', 5000, application, use_reloader=True, use_debugger=True)
+    run_simple('127.0.0.1', 5000, application, use_reloader=True, use_debugger=True)
 
 
