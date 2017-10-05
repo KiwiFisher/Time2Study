@@ -7,7 +7,8 @@ from .api import ApiView
 def home_view():
     papers = Paper.query.all()
 
-    paper_data = [{paper.paper_id : paper.paper_name} for paper in papers]
+    paper_data = [{'paper_id' : paper.paper_id, 'paper_name' : paper.paper_name} for paper in papers]
+    print(paper_data)
     return render_template("index.html", _paper_data=paper_data)
 
 

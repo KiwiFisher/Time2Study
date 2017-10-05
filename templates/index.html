@@ -18,19 +18,13 @@
         </div>
     </div>
     <div class="paper-selector">
-        <select class="selectpicker" id="paper_selection" data-live-search="true" title="Select a paper" onclick="addPaper()">
-            <option>Software Development Practice</option>
-            <option>Microeconomics</option>
-            <option>Program Design and Construction</option>
-            <option>Data and Process Modelling</option>
-            <option>Programming 1</option>
-            <option>Programming 2</option>
-            <option>Logical Database Design</option>
-            <option>Game Programming</option>
-            <option>Theory of Computation</option>
-            <option>Research Project</option>
-            <option>Programming Languages</option>
-            <option>Food Industry Legislation</option>
+        <select class="selectpicker" id="paper_selection" data-live-search="true" title="Select a paper" onclick="addPaper()" data-size="10">
+            {% for paper in _paper_data %}
+                {{ _paper_id }}
+                {% set _paper_id = paper.paper_id %}
+                {% set _paper_name = paper.paper_name %}
+                <option value="{{ _paper_id }}" data-tokens="{{ _paper_id }} {{_paper_name}} ">{{ _paper_name }} ({{_paper_id}})</option>
+            {% endfor %}
 
         </select>
         <button type="button" class="btn" id="paper1">Microeconomics</button>
