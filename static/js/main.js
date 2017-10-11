@@ -1,3 +1,28 @@
+console.log('Main js');
+console.log('luguang  js');
+
+
+
+$.ajax({
+  type: "POST",
+  url: 'http://time2.study:5777/api/?request=info&paper_id=' + 'COMP700',
+  // url: 'http://time2.study:5777/api/',
+  // data: {
+  //     request: 'info',
+  //     paper_id: 'COMP700'
+  // },
+  success: function (succes) {
+      console.log('succes', succes);
+  },
+    error: function (error) {
+      console.log('error', error);
+  },
+  // dataType: dataType
+});
+
+
+
+
 var papers = [
     {
         paper_code: "COMP602",
