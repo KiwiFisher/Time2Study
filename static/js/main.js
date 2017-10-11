@@ -300,6 +300,7 @@ var proposals = [
 
 // Choose the paper and stream
 // Find time and day for a class
+function updateTimetable(){
 for (papers_no  = 0; papers_no < 4; ++papers_no) {
     var timetablePaper = proposals[0][papers_no];
     console.log(timetablePaper);
@@ -343,6 +344,26 @@ for (papers_no  = 0; papers_no < 4; ++papers_no) {
         }
 
     }
+}
+
+}
+
+function clearTimetable() {
+    var timeslotArray = document.getElementsByClassName("time-slot-enrolled");
+
+    for(var i = (timeslotArray.length - 1); i >= 0; i--)
+    {
+        timestampArray[i].className = "time-slot";
+    }
+}
+
+
+
+function addPaper() {
+    var paper_added = document.getElementsByClassName("selectpicker").title;
+    console.log(paper_added);
+    document.getElementsById("class1").innerHTML = "";
+    document.getElementsById("class1").innerHTML = paper_added;
 }
 
 
