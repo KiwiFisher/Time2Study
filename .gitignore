@@ -2,3 +2,5 @@
 .idea/workspace.xml
 blueprints/__pycache__/__init__.cpython-36.pyc
 .idea/workspace.xml
+*.xml
+*.xml
