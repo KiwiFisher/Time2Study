@@ -1,4 +1,6 @@
 from structs import Paper, Stream, Lecture
+from utils import get_paper_info
+from itertools import product
 
 # The algorithm is being designed with modularity in mind. This will allow us to directly interchange algorithms
 # should a large scale rebuild ever be required. It also means multiple people could work towards the same goal
@@ -15,12 +17,15 @@ class Algorithm:
             presets = {}
 
 
-        for paper in papers:
+        for paper in papers.split(','):
+            paper_json = get_paper_info(paper)
+            # print(paper_json['streams'])
             streams = {}
 
-            for stream in paper['streams']:
+            for stream in paper_json['streams']:
                 lectures = []
-                for lecture in paper['streams']['{}'.format(stream)]:
+                for lecture in paper_json['streams']['{}'.format(stream)]:
+
                     # Use this triple for-loop to build up objects from the inside out
                     # Use this indentation for lecture things
                     lectures.append(Lecture(lecture['day'], lecture['room'], lecture['start_time'], lecture['end_time'], lecture['start_date']))
@@ -29,34 +34,29 @@ class Algorithm:
                 streams[stream] = Stream(stream, lectures)
 
             # Use this indentation for paper things
-            self.papers['{}'.format(paper['paper_id'])] = Paper(paper['paper_id'], paper['paper_name'],
-                                                                paper['paper_desc'], streams, paper['points'],
-                                                                paper['level'], paper['efts'])
+            self.papers['{}'.format(paper_json['paper_id'])] = Paper(paper_json['paper_id'], paper_json['paper_name'],
+                                                                     paper_json['paper_desc'], streams, paper_json['points'],
+                                                                     paper_json['level'], paper_json['efts'])
 
 
 
     """
-    Match streams will return a dictionary of """
+    Match streams will return a list of lists for streams. Each of these
+     first list items is a 'timetable'
+     """
     def match_streams(self):
-        to_return = {}
 
-        for paper_id in self.papers:
-            paper = self.papers[paper_id]
-            print(paper)
-            to_return[paper.paper_id] = paper.paper_name
+        all_paper_streams = []
 
-            for stream_id in paper.streams:
-                stream = paper.streams[stream_id]
-                print("    - " + str(stream))
+        for paper in self.papers:
+            paper = self.papers[paper]
+            paper_streams = []
+            for stream in paper.streams:
+                stream = paper.streams[stream]
+                paper_streams.append({paper.paper_id : stream.steam_id})
 
-                for lecture in stream.lectures:
-                    print("        - " + str(lecture))
+            all_paper_streams.append(paper_streams)
 
-        return to_return
+        stream_combos = list(product(*all_paper_streams))
 
-    # def match_streams(self):
-    #     to_return = {}
-    #
-    #     # Your code here
-    #
-    #     return to_return
+        return (stream_combos)
