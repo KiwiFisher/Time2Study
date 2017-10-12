@@ -2,14 +2,108 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf767bff-0783-42d7-9dce-e4e95bac084d" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/time2populate/__init__.py" afterPath="$PROJECT_DIR$/paperscraper/time2populate/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Time2Study.iml" afterPath="$PROJECT_DIR$/.idea/Time2Study.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/css/bootstrap-select.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/css/bootstrap-select.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/css/bootstrap-select.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/bootstrap-select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/bootstrap-select.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/bootstrap-select.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-ar_AR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-ar_AR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-bg_BG.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-bg_BG.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-cro_CRO.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-cro_CRO.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-cs_CZ.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-cs_CZ.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-da_DK.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-da_DK.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-de_DE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-de_DE.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-en_US.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-en_US.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-es_CL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-es_CL.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-es_ES.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-es_ES.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-et_EE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-et_EE.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-eu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-fa_IR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-fa_IR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-fi_FI.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-fi_FI.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-fr_FR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-fr_FR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-hu_HU.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-hu_HU.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-id_ID.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-id_ID.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-it_IT.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-it_IT.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-ja_JP.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-ja_JP.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-kh_KM.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-kh_KM.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-ko_KR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-ko_KR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-lt_LT.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-lt_LT.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-nb_NO.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-nb_NO.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-nl_NL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-nl_NL.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-pl_PL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-pl_PL.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-pt_BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-pt_BR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-pt_PT.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-pt_PT.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-ro_RO.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-ro_RO.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-ru_RU.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-ru_RU.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-sk_SK.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-sk_SK.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-sl_SI.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-sl_SI.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-sv_SE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-sv_SE.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-tr_TR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-tr_TR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-ua_UA.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-ua_UA.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-vi_VN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-vi_VN.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-zh_CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-zh_CN.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-zh_TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/bootstrap-select-1.12.4/js/i18n/defaults-zh_TW.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/jQuery/jquery-3.2.1.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/main.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/assets/logo.png" afterPath="$PROJECT_DIR$/static/images/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/css/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/css/bootstrap-theme.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/css/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css.map" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/css/bootstrap-theme.min.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/css/bootstrap.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/css/bootstrap.min.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/bootstrap.js" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/js/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/npm.js" afterPath="$PROJECT_DIR$/static/dist/bootstrap-3.3.7/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithm/__init__.py" afterPath="$PROJECT_DIR$/algorithm/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blueprints/api/__init__.py" afterPath="$PROJECT_DIR$/blueprints/api/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils.py" afterPath="$PROJECT_DIR$/utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +115,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Time2Study$demo.coverage" NAME="demo Coverage Results" MODIFIED="1507751396523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Time2Study$wsgi.coverage" NAME="wsgi Coverage Results" MODIFIED="1507751818922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Time2Study$wsgi.coverage" NAME="wsgi Coverage Results" MODIFIED="1507775744007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -100,46 +194,50 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithm/__init__.py">
+        <entry file="file://$PROJECT_DIR$/blueprints/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paperscraper/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="102">
+              <caret line="9" column="62" lean-forward="false" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/paperscraper/time2populate/__init__.py">
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-              <folding>
-                <marker date="1507176645486" expanded="true" signature="1920:2048" ph="INSERT INTO paper... " />
-                <marker date="1507176645486" expanded="true" signature="2485:2564" ph="INSERT INTO stream... " />
-                <marker date="1507176645486" expanded="true" signature="2998:3143" ph="INSERT INTO lecture... " />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structs/__init__.py">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="32" column="59" lean-forward="false" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -148,11 +246,31 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blueprints/api/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="35" column="49" lean-forward="false" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+            <state relative-caret-position="272">
+              <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="npm.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/npm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajax.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/ajax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -163,6 +281,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -192,12 +311,14 @@
         <option value="$PROJECT_DIR$/wsgi.py" />
         <option value="$PROJECT_DIR$/extensions.py" />
         <option value="$PROJECT_DIR$/blueprints/__init__.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/utils.py" />
-        <option value="$PROJECT_DIR$/blueprints/api/__init__.py" />
         <option value="$PROJECT_DIR$/demo.py" />
         <option value="$PROJECT_DIR$/algorithm/__init__.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/js/ajax.js" />
+        <option value="$PROJECT_DIR$/blueprints/api/__init__.py" />
+        <option value="$PROJECT_DIR$/static/js/main.js" />
+        <option value="$PROJECT_DIR$/config.py" />
       </list>
     </option>
   </component>
@@ -240,6 +361,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Time2Study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Time2Study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Time2Study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Time2Study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Time2Study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Time2Study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Time2Study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Time2Study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blueprints" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -247,14 +428,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;SQL Server (Microsoft)" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Julian\PycharmProjects\GITHUB\Time2Study\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Julian\PycharmProjects\GITHUB\Time2Study\static\js" />
+      <recent name="C:\Users\Julian\PycharmProjects\GITHUB\Time2Study\static\css" />
+      <recent name="C:\Users\Julian\PycharmProjects\GITHUB\Time2Study\static" />
       <recent name="C:\Users\Julian\PycharmProjects\GITHUB\Time2Study\paperscraper" />
       <recent name="C:\Users\Julian\PycharmProjects\GITHUB\Time2Study" />
     </key>
@@ -511,20 +698,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15926327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39761648" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.117803834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12100213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20149253" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -549,16 +737,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/schemas.py" />
-    <entry file="file://$PROJECT_DIR$/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/databasegfd/models/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/database.py" />
     <entry file="file://$PROJECT_DIR$/blueprints/api/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -693,15 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -709,15 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -725,8 +885,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structs/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.py" />
+    <entry file="file://$PROJECT_DIR$/paperscraper/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paperscraper/time2populate/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
+            <marker date="1507176645486" expanded="true" signature="1920:2048" ph="INSERT INTO paper... " />
+            <marker date="1507176645486" expanded="true" signature="2485:2564" ph="INSERT INTO stream... " />
+            <marker date="1507176645486" expanded="true" signature="2998:3143" ph="INSERT INTO lecture... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -741,67 +938,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structs/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="170">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo.py">
+    <entry file="file://$PROJECT_DIR$/static/dist/jQuery/jquery-3.2.1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="85">
+          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blueprints/api/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="35" column="49" lean-forward="false" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+        <state relative-caret-position="272">
+          <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/__init__.py">
+    <entry file="file://$PROJECT_DIR$/static/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paperscraper/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="237">
+          <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paperscraper/time2populate/__init__.py">
+    <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding>
-            <marker date="1507176645486" expanded="true" signature="1920:2048" ph="INSERT INTO paper... " />
-            <marker date="1507176645486" expanded="true" signature="2485:2564" ph="INSERT INTO stream... " />
-            <marker date="1507176645486" expanded="true" signature="2998:3143" ph="INSERT INTO lecture... " />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="32" column="59" lean-forward="false" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>

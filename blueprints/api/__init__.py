@@ -1,9 +1,8 @@
 from flask import jsonify, request
 from flask_classful import FlaskView, route
-from models import Paper, Stream, Lecture
-from utils import output_json
+import ast
 from algorithm import Algorithm
-from utils import get_paper_info
+from utils import get_paper_info, output_json
 
 
 
@@ -26,13 +25,14 @@ class ApiView(FlaskView):
             """
             If it's a post request then we are expected to respond with some info
             """
-            request_type = request.args.to_dict()['request']
+            args = ast.literal_eval(list(request.form)[0])
+            request_type = args['request']
 
             if request_type == 'info':
-                return jsonify(get_paper_info(request.args.to_dict()['paper_id']))
+                return jsonify(get_paper_info(args['paper_id']))
 
             elif request_type == 'algorithm':
-                papers = request.args.to_dict()['papers']
+                papers = args['papers']
                 return jsonify(Algorithm(papers).match_streams())
 
             else:
