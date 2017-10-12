@@ -1,6 +1,6 @@
 #navbar-bg {
     background-color: 555759;
-    height: 75px;
+    height: 58px;
 }
 
 #navbar-stripe {
@@ -17,4 +17,8 @@
 
 .navbar {
     border: 0 !important;
+}
+
+.paper-selector {
+    padding-bottom: 100px;
 }

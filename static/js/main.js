@@ -301,51 +301,50 @@ var proposals = [
 // Choose the paper and stream
 // Find time and day for a class
 function updateTimetable(){
-for (papers_no  = 0; papers_no < 4; ++papers_no) {
-    var timetablePaper = proposals[0][papers_no];
-    console.log(timetablePaper);
-    var timetableStream = proposals[1][papers_no];
-    console.log(timetableStream);
-    var paper = "";
-    var stream = 0;
+    for (papers_no  = 0; papers_no < 4; ++papers_no) {
+        var timetablePaper = proposals[0][papers_no];
+        console.log(timetablePaper);
+        var timetableStream = proposals[1][papers_no];
+        console.log(timetableStream);
+        var paper = "";
+        var stream = 0;
 
-    for (index = 0, len = papers.length; index < len; ++index) {
-        if(papers[index].paper_code == timetablePaper) {
-            paper = papers[index];
-            console.log(paper);
-            break;
+        for (index = 0, len = papers.length; index < len; ++index) {
+            if(papers[index].paper_code == timetablePaper) {
+                paper = papers[index];
+                console.log(paper);
+                break;
+            }
         }
-    }
 
-    for (index = 0, len = paper.streams.length; index < len; ++index) {
-        if(paper.streams[index].stream_no == timetableStream){
-            stream = paper.streams[index];
-            console.log(stream);
-            break;
+        for (index = 0, len = paper.streams.length; index < len; ++index) {
+            if(paper.streams[index].stream_no == timetableStream){
+                stream = paper.streams[index];
+                console.log(stream);
+                break;
+            }
         }
-    }
 
-    for (index = 0, len = stream.classes.length; index < len; ++index) {
-        var time_slot = "";
-        var lecture = stream.classes[index];
-        time_slot = lecture.day.substring(0, 2).toLowerCase().concat("-");
+        for (index = 0, len = stream.classes.length; index < len; ++index) {
+            var time_slot = "";
+            var lecture = stream.classes[index];
+            time_slot = lecture.day.substring(0, 2).toLowerCase().concat("-");
 
 
-        if (((lecture.end_time - lecture.end_time) % 100) == 0) {
-            class_length = (lecture.end_time - lecture.start_time) / 100;
-            for (hour = (lecture.start_time / 100); hour < (lecture.end_time / 100); ++hour) {
-                var temp_time_slot = time_slot.concat(hour);
-                document.getElementById(temp_time_slot).className = "time-slot-enrolled-" + (papers_no+1);
-                if (hour == (lecture.start_time / 100)) {
-                    document.getElementById(temp_time_slot).innerHTML = paper.paper_name;
+            if (((lecture.end_time - lecture.end_time) % 100) == 0) {
+                class_length = (lecture.end_time - lecture.start_time) / 100;
+                for (hour = (lecture.start_time / 100); hour < (lecture.end_time / 100); ++hour) {
+                    var temp_time_slot = time_slot.concat(hour);
+                    document.getElementById(temp_time_slot).className = "time-slot-enrolled-" + (papers_no+1);
+                    if (hour == (lecture.start_time / 100)) {
+                        document.getElementById(temp_time_slot).innerHTML = paper.paper_name;
+                    }
                 }
+
             }
 
         }
-
     }
-}
-
 }
 
 function clearTimetable() {
@@ -366,7 +365,20 @@ function addPaper() {
     document.getElementsById("class1").innerHTML = paper_added;
 }
 
+/*
+function getPaper() {
 
+    jsonData = "";
 
-
+    $.ajax({
+        url: "http://www.time2.study:5777/api/",
+        type: "POST",
+        dataType: "json",
+        data: jsonData,
+        success: callback(response){
+            $('#main').html(response);
+        }
+    });
+};
+*/
 

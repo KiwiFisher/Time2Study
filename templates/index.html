@@ -17,20 +17,29 @@
 
         </div>
     </div>
-    <div class="paper-selector">
-        <select class="selectpicker" id="paper_selection" data-live-search="true" title="Select a paper" onclick="addPaper()" data-size="10">
+    <div class="paper-selector col-xs-12" >
+        <select class="selectpicker"
+                id="paper_selection"
+                data-live-search="true"
+                title="Search for your papers"
+                data-size="10"
+                multiple data-max-options="4"
+                data-width="100%"
+                data-header="Search for your papers">
             {% for paper in _paper_data %}
                 {{ _paper_id }}
                 {% set _paper_id = paper.paper_id %}
                 {% set _paper_name = paper.paper_name %}
-                <option value="{{ _paper_id }}" data-tokens="{{ _paper_id }} {{_paper_name}} ">{{ _paper_name }} ({{_paper_id}})</option>
+                <option value="{{ _paper_id }}"
+                        data-tokens="{{ _paper_id }} {{_paper_name}}"
+                        data-subtext="{{_paper_id}}"
+                        title="<span class='label label-default'>{{_paper_name}}</span>">       
+                        <!--data-content="<span class='label label-default'>{{_paper_name}}</span>"-->
+                    {{ _paper_name }}</option>
             {% endfor %}
 
         </select>
-        <button type="button" class="btn" id="paper1">Microeconomics</button>
-        <button type="button" class="btn" id="paper2">Software Development Practice</button>
-        <button type="button" class="btn" id="paper3">Data & Process Modelling</button>
-        <button type="button" class="btn" id="paper4">Program Design and Construction</button>
+
 
     </div>
 
