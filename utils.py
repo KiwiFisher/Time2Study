@@ -17,6 +17,7 @@ def output_json(data, code, headers=None):
     response = make_response(dumped, code, headers)
     return response
 
+
 def get_paper_info(paper_id):
     paper = Paper.query.filter_by(paper_id=paper_id).first()
     if paper is not None:

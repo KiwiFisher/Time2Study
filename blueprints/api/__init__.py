@@ -25,6 +25,7 @@ class ApiView(FlaskView):
             """
             If it's a post request then we are expected to respond with some info
             """
+            print(request.form)
             args = ast.literal_eval(list(request.form)[0])
             request_type = args['request']
 

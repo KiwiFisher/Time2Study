@@ -102,7 +102,7 @@ async function ajaxTest(paper_id) {
 
 async function start() {
     console.log("Calling the API");
-    ajaxTest('COMP602');
+    ajaxTest('COMP603');
 }
 
 window.onload = start();
