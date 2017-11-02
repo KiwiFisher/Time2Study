@@ -136,6 +136,7 @@ async function getCombo(listOfPaperCodes, callback) {
 async function start() {
     console.log("Calling the API");
     ajaxTest('COMP602');
+    ajaxTest('COMP603');
 }
 
 $(function() {

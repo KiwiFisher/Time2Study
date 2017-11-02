@@ -30,7 +30,11 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     DATABASE_NAME = 'application.db'
     DATABASE_PATH = os.path.join(INSTANCE_FOLDER_PATH, DATABASE_NAME)
+<<<<<<< HEAD
     SQLALCHEMY_DATABASE_URI = 'mysql+mysqldb://user:STim3ness@time2.study/Time2'
+=======
+    SQLALCHEMY_DATABASE_URI = 'mysql+mysqldb://admin:sdp@localhost/paper_schema'
+>>>>>>> 9c0ae2cfd8fd83676bdff9e5a4620f461819e410
 
     @staticmethod
     def from_data(config):
