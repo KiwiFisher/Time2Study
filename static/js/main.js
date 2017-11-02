@@ -1,7 +1,6 @@
-//time-slot-enrolled-1
-
 // Choose the paper and stream
 // Find time and day for a class
+/*
 function updateTimetable(){
 for (papers_no  = 0; papers_no < 4; ++papers_no) {
     let timetablePaper = proposals[0][papers_no];
@@ -49,7 +48,7 @@ for (papers_no  = 0; papers_no < 4; ++papers_no) {
 }
 
 }
-
+*/
 function clearTimetable() {
     let timeslotArray = document.getElementsByClassName("time-slot-enrolled");
 
@@ -58,6 +57,9 @@ function clearTimetable() {
         timestampArray[i].className = "time-slot";
     }
 }
+
+var listOfPapers = [];
+var combinationOfStreams = [];
 
 
 
@@ -91,13 +93,44 @@ async function getPaperInfo(paper_id, callback) {
     })
 }
 
-async function ajaxTest(paper_id) {
-    await getPaperInfo(paper_id, (response) => {
+async function getPaperCombos(papers_list, callback) {
 
-        console.log(response)
-
-
+    jsonData = JSON.stringify({
+        request: 'algorithm',
+        papers: papers_list
     });
+
+    console.log(jsonData);
+
+    $.ajax({
+        url: '/api/',
+        type: 'POST',
+        dataType: 'json',
+        data: jsonData,
+        success: callback,
+        error: (response) => {
+            console.log("Errors!");
+            console.log(response);
+        },
+
+    })
+}
+
+
+
+async function addPaper(paper_id, callback) {
+    await getPaperInfo(paper_id, (response) => {
+        console.log(response);
+        listOfPapers.push(response);
+        console.log(listOfPapers);
+    });
+}
+
+async function getCombo(listOfPaperCodes, callback) {
+    await getPaperCombos(listOfPaperCodes, (response) => {
+        console.log(response);
+        combinationOfStreams.push(response);
+    })
 }
 
 async function start() {
@@ -105,9 +138,79 @@ async function start() {
     ajaxTest('COMP602');
 }
 
-window.onload = start();
+$(function() {
+    console.log("Ready for business");
+});
+
+$('.selectpicker').change(function () {
+    console.log("A paper has been selected");
+    if ($("#paperButtons > button").length >= 4) {
+        console.log("4 papers are already selected");
+        return;
+    }
+    var paperAlreadyExists = 0;
+    $('#paperButtons > button').each(function () {
+        console.log('Paper already in list: ' + $(this).text());
+        console.log('Paper trying to be added: ' + $('.selectpicker').find("option:selected").text());
+        if ($(this).text() == $('.selectpicker').find("option:selected").text()) {
+
+            console.log("Paper already in listOfPapers");
+            paperAlreadyExists = 1;
+            return;
+        }
+    });
+
+    if (paperAlreadyExists == 0) {
+        var selectedPaperCode = $(this).find("option:selected").data("subtext");
+        addPaper(selectedPaperCode);
+
+        var selectedText = $(this).find("option:selected").text();
+        var newButton = document.createElement("button");
+        newButton.setAttribute('class','btn paper-btn');
+        newButton.setAttribute('type','button');
+        newButton.setAttribute('id',selectedPaperCode);
+        newButton.setAttribute('text', selectedText);
+        newButton.innerHTML = selectedText;
+
+        document.getElementById("paperButtons").appendChild(newButton);
+        console.log("New paper button has been created");
+    }
 
 
+});
+
+function displayPaperInfo() {
+    console.log("Display Paper Info");
+};
+
+function addButton() {
+
+
+}
+
+function paintTimetable() {
+    console.log("Painting Streams to Timetable");
+
+
+
+
+}
+
+function updateTimetable() {
+    console.log("Update timetable clicked");
+    console.log("Requesting data from server");
+
+    var listOfPaperCodes = [];
+
+    listOfPapers.forEach(function (currentValue){
+        listOfPaperCodes.push(currentValue.paper_id);
+        console.log(listOfPaperCodes);
+    })
+
+    getCombo(listOfPaperCodes);
+
+    paintTimetable();
+}
 
 
 

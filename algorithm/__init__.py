@@ -17,7 +17,7 @@ class Algorithm:
             presets = {}
 
 
-        for paper in papers.split(','):
+        for paper in papers:
             paper_json = get_paper_info(paper)
             # print(paper_json['streams'])
             streams = {}

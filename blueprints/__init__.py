@@ -9,7 +9,7 @@ def home_view():
 
     paper_data = [{'paper_id' : paper.paper_id, 'paper_name' : paper.paper_name} for paper in papers]
     print(paper_data)
-    return render_template("index.html", _paper_data=paper_data)
+    return render_template("index.html", _paper_data=paper_data, )
 
 
 class HomeView(FlaskView):
